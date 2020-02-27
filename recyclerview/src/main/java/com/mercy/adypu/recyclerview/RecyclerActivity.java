@@ -22,11 +22,11 @@ public class RecyclerActivity extends AppCompatActivity {
 
        recyclerView = findViewById(R.id.recyclerView);
        images = new int[]{R.drawable.jellybean, R.drawable.jag, R.drawable.ferrari, R.drawable.img };
-        names = new String[]{"jelly bean", "jag", "ferrari", "img"};
+        names = new String[]{"Jelly Bean", "Jaguar", "Ferrari", "Lamborghini"};
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager( RecyclerActivity.this);
 
-        VersionAdapter adapter = new VersionAdapter(RecyclerActivity.this, getList(images, names) );
+        VersionAdapter adapter = new VersionAdapter(RecyclerActivity.this, getList(images, names), this );
         recyclerView.setLayoutManager(linearLayoutManager);
         recyclerView.setAdapter(adapter);
 
