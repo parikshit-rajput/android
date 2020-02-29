@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="txtName" type="id">Name</item>
+    <item name="txtAge" type="id" />
+    <item name="txtSalary" type="id" />
+</resources>
